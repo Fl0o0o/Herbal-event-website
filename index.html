@@ -8,50 +8,91 @@
             background-color: black;
             color: white;
             text-align: center;
+            font-family: Arial;
         }
 
-        .section {
-            margin: 40px;
-            padding: 20px;
-            border: 1px solid white;
+        /* 导航 */
+        .nav {
+            margin: 20px;
         }
 
+        a {
+            color: red;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        /* 主图 */
+        .hero img {
+            width: 80%;
+            margin-top: 20px;
+            border-radius: 10px;
+            filter: brightness(0.8);
+        }
+
+        /* 标题 */
         #title {
-            font-size: 40px;
-            color: hotpink;
+            font-size: 70px;
+            color: red;
+            margin-top: 20px;
+            letter-spacing: 5px;
+
+            /* 🔥 发光效果 */
+            text-shadow: 
+                0 0 10px red,
+                0 0 20px red,
+                0 0 40px darkred;
+        }
+
+        /* 信息 */
+        .info {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* lineup */
+        .lineup {
+            margin-top: 30px;
+            font-size: 24px;
+            color: red;
         }
     </style>
 
 </head>
 
 <body>
- <div class="section">
+
+    <!-- 导航 -->
+    <div class="nav">
         <a href="index.html">Home</a> |
         <a href="tickets.html">Tickets</a> |
         <a href="about.html">About</a>
     </div>
 
-<h1>About Herbal</h1>
+    <!-- 主图 -->
+    <div class="hero">
+        <img src="images/herbal.jpg">
+    </div>
 
-<div class="section">
-    <p>
-        Herbal is an underground music experience focused on blending hip hop and electronic music into a new form of sonic expression. 
-        Taking place in New York, Brooklyn at Club transpecos, the event creates a space for experimental sound, creative freedom, and immersive energy. 
-        It is designed for audiences who are looking beyond mainstream music and into the future of underground culture.
-    </p>
+    <!-- 标题 -->
+    <div id="title">HERBAL</div>
 
-    <p>
-        Westwood and Coreylingo bring a hybrid sound that merges underground hip hop with electronic production. 
-        Their sets are filled with distorted basslines, atmospheric textures, and unpredictable transitions. 
-        The performance moves between rhythm and chaos, creating a raw and emotional experience that reflects the evolution of modern underground music.
-    </p>
+    <!-- 信息 -->
+    <div class="info">
+        May 15 — Brooklyn, New York  
+        <br>
+        Club Evil
+    </div>
 
-    <p>
-        DJ sets by Flo and Samo focus on high-energy selections influenced by techno and hyperpop. 
-        Fast-paced mixing, heavy drops, and intense momentum define the night’s energy. 
-        Opening the event, Harbor introduces the atmosphere with a more ambient and building sound, preparing the crowd for the full experience of Herbal.
-    </p>
-</div>
+    <!-- lineup -->
+    <div class="lineup">
+        Westwood / Coreylingo / DJ Flo / Samo / Harbor
+    </div>
 
 </body>
 </html>
